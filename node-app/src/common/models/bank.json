@@ -1,0 +1,413 @@
+{
+  "name": "Bank",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "STNAME": {
+      "type": "string"
+    },
+    "CERT": {
+      "type": "number"
+    },
+    "DOCKET": {
+      "type": "number"
+    },
+    "ACTIVE": {
+      "type": "number"
+    },
+    "ADDRESS": {
+      "type": "string"
+    },
+    "ASSET": {
+      "type": "string"
+    },
+    "BKCLASS": {
+      "type": "string"
+    },
+    "CHANGEC1": {
+      "type": "number"
+    },
+    "CHANGEC2": {
+      "type": "number"
+    },
+    "CHANGEC3": {
+      "type": "number"
+    },
+    "CHANGEC4": {
+      "type": "number"
+    },
+    "CHANGEC5": {
+      "type": "number"
+    },
+    "CHARTER": {
+      "type": "number"
+    },
+    "CHRTAGNT": {
+      "type": "string"
+    },
+    "CONSERVE": {
+      "type": "string"
+    },
+    "CITY": {
+      "type": "string"
+    },
+    "CLCODE": {
+      "type": "number"
+    },
+    "CMSA_NO": {
+      "type": "number"
+    },
+    "CMSA": {
+      "type": "string"
+    },
+    "COUNTY": {
+      "type": "string"
+    },
+    "DATEUPDT": {
+      "type": "string"
+    },
+    "DENOVO": {
+      "type": "number"
+    },
+    "DEP": {
+      "type": "string"
+    },
+    "EFFDATE": {
+      "type": "string"
+    },
+    "ENDEFYMD": {
+      "type": "string"
+    },
+    "EQ": {
+      "type": "string"
+    },
+    "ESTYMD": {
+      "type": "string"
+    },
+    "FDICDBS": {
+      "type": "number"
+    },
+    "FDICREGN": {
+      "type": "string"
+    },
+    "FDICSUPV": {
+      "type": "string"
+    },
+    "FED": {
+      "type": "number"
+    },
+    "FED_RSSD": {
+      "type": "number"
+    },
+    "FEDCHRTR": {
+      "type": "number"
+    },
+    "FLDOFF": {
+      "type": "string"
+    },
+    "IBA": {
+      "type": "number"
+    },
+    "INACTIVE": {
+      "type": "number"
+    },
+    "INSAGNT1": {
+      "type": "string"
+    },
+    "INSAGNT2": {
+      "type": "string"
+    },
+    "INSDATE": {
+      "type": "string"
+    },
+    "INSTCRCD": {
+      "type": "number"
+    },
+    "INSBIF": {
+      "type": "number"
+    },
+    "INSCOML": {
+      "type": "number"
+    },
+    "INSDIF": {
+      "type": "number"
+    },
+    "INSFDIC": {
+      "type": "number"
+    },
+    "INSSAIF": {
+      "type": "number"
+    },
+    "INSSAVE": {
+      "type": "number"
+    },
+    "MSA_NO": {
+      "type": "number"
+    },
+    "MSA": {
+      "type": "string"
+    },
+    "NAME": {
+      "type": "string"
+    },
+    "NEWCERT": {
+      "type": "number"
+    },
+    "OAKAR": {
+      "type": "number"
+    },
+    "OTSDIST": {
+      "type": "number"
+    },
+    "OTSREGNM": {
+      "type": "string"
+    },
+    "PROCDATE": {
+      "type": "string"
+    },
+    "QBPRCOML": {
+      "type": "number"
+    },
+    "REGAGNT": {
+      "type": "string"
+    },
+    "REPDTE": {
+      "type": "string"
+    },
+    "RISDATE": {
+      "type": "string"
+    },
+    "STCHRTR": {
+      "type": "number"
+    },
+    "ROA": {
+      "type": "string"
+    },
+    "ROAQ": {
+      "type": "string"
+    },
+    "ROE": {
+      "type": "string"
+    },
+    "ROEQ": {
+      "type": "string"
+    },
+    "RUNDATE": {
+      "type": "string"
+    },
+    "SASSER": {
+      "type": "number"
+    },
+    "LAW_SASSER_FLG": {
+      "type": "string"
+    },
+    "STALP": {
+      "type": "string"
+    },
+    "STCNTY": {
+      "type": "number"
+    },
+    "STNUM": {
+      "type": "number"
+    },
+    "ZIP": {
+      "type": "number"
+    },
+    "SUPRV_FD": {
+      "type": "number"
+    },
+    "OCCDIST": {
+      "type": "number"
+    },
+    "UNINUM": {
+      "type": "number"
+    },
+    "ULTCERT": {
+      "type": "number"
+    },
+    "CFPBEFFDTE": {
+      "type": "string"
+    },
+    "CFPBENDDTE": {
+      "type": "string"
+    },
+    "CFPBFLAG": {
+      "type": "number"
+    },
+    "REGAGENT2": {
+      "type": "string"
+    },
+    "TE01N528": {
+      "type": "string"
+    },
+    "TE02N528": {
+      "type": "string"
+    },
+    "TE03N528": {
+      "type": "string"
+    },
+    "TE04N528": {
+      "type": "string"
+    },
+    "TE05N528": {
+      "type": "string"
+    },
+    "TE06N528": {
+      "type": "string"
+    },
+    "TE07N528": {
+      "type": "string"
+    },
+    "TE08N528": {
+      "type": "string"
+    },
+    "TE09N528": {
+      "type": "string"
+    },
+    "TE10N528": {
+      "type": "string"
+    },
+    "TE01N529": {
+      "type": "string"
+    },
+    "TE02N529": {
+      "type": "string"
+    },
+    "TE03N529": {
+      "type": "string"
+    },
+    "TE04N529": {
+      "type": "string"
+    },
+    "TE05N529": {
+      "type": "string"
+    },
+    "TE06N529": {
+      "type": "string"
+    },
+    "WEBADDR": {
+      "type": "string"
+    },
+    "OFFICES": {
+      "type": "number"
+    },
+    "CERTCONS": {
+      "type": "string"
+    },
+    "PARCERT": {
+      "type": "string"
+    },
+    "CITYHCR": {
+      "type": "string"
+    },
+    "DEPDOM": {
+      "type": "string"
+    },
+    "FORM31": {
+      "type": "string"
+    },
+    "HCTMULT": {
+      "type": "string"
+    },
+    "INSTAG": {
+      "type": "string"
+    },
+    "MUTUAL": {
+      "type": "string"
+    },
+    "NAMEHCR": {
+      "type": "string"
+    },
+    "NETINC": {
+      "type": "string"
+    },
+    "NETINCQ": {
+      "type": "string"
+    },
+    "OFFDOM": {
+      "type": "string"
+    },
+    "OFFFOR": {
+      "type": "string"
+    },
+    "OFFOA": {
+      "type": "string"
+    },
+    "RSSDHCR": {
+      "type": "string"
+    },
+    "STALPHCR": {
+      "type": "string"
+    },
+    "STMULT": {
+      "type": "string"
+    },
+    "SUBCHAPS": {
+      "type": "string"
+    },
+    "ROAPTX": {
+      "type": "string"
+    },
+    "ROAPTXQ": {
+      "type": "string"
+    },
+    "TRUST": {
+      "type": "string"
+    },
+    "SPECGRP": {
+      "type": "string"
+    },
+    "SPECGRPN": {
+      "type": "string"
+    },
+    "TRACT": {
+      "type": "string"
+    },
+    "CSA": {
+      "type": "string"
+    },
+    "CSA_NO": {
+      "type": "number"
+    },
+    "CSA_FLG": {
+      "type": "number"
+    },
+    "CBSA": {
+      "type": "string"
+    },
+    "CBSA_NO": {
+      "type": "number"
+    },
+    "CBSA_METRO_NAME": {
+      "type": "string"
+    },
+    "CBSA_METRO": {
+      "type": "number"
+    },
+    "CBSA_METRO_FLG": {
+      "type": "number"
+    },
+    "CBSA_MICRO_FLG": {
+      "type": "number"
+    },
+    "CBSA_DIV": {
+      "type": "string"
+    },
+    "CBSA_DIV_NO": {
+      "type": "number"
+    },
+    "CBSA_DIV_FLG": {
+      "type": "number"
+    },
+    "CB": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

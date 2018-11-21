@@ -1,0 +1,45 @@
+version: '3.2'
+
+services:
+  couchdb:
+    image: couchdb:2.2
+    restart: always
+    ports:
+      - "5984:5984"
+    env_file:
+      - global-variables.env
+    environment:
+      - COUCHDB_USER=couchdbadmin
+      - COUCHDB_PASSWORD=couchdbpassword
+    networks:
+      - node-example
+
+  db-init:
+    build:
+      context: ./db-init
+      dockerfile: Dockerfile
+    restart: on-failure
+    env_file:
+      - global-variables.env
+    networks:
+      - node-example
+    depends_on:
+      - couchdb
+
+  node-app:
+    build:
+      context: ./node-app
+      dockerfile: Dockerfile
+    restart: on-failure
+    ports:
+      - "3000:3000"
+    env_file:
+      - global-variables.env
+    networks:
+      - node-example
+    depends_on:
+      - couchdb
+
+networks:
+  node-example:
+    driver: bridge
