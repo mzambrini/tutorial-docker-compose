@@ -1,4 +1,4 @@
-version: '3.2'
+version: '2'
 
 services:
   couchdb:
@@ -8,9 +8,6 @@ services:
       - "5984:5984"
     env_file:
       - global-variables.env
-    environment:
-      - COUCHDB_USER=couchdbadmin
-      - COUCHDB_PASSWORD=couchdbpassword
     networks:
       - node-example
 
