@@ -10,7 +10,7 @@ RUN apk add --update --no-cache openssl bash curl \
 
 COPY /work /work
 
-RUN chmod +x /work/*.sh 
+RUN ls /work && chmod +x /work/*.sh 
 
 ENTRYPOINT exec dockerize -wait http://${COUCHDB_USER}:${COUCHDB_PASSWORD}@${COUCHDB_HOST}:${COUCHDB_PORT} -timeout 260s /work/entrypoint.sh
 
