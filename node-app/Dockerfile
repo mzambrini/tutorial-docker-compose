@@ -9,12 +9,9 @@ RUN apt-get update && apt-get install -y wget \
 
 WORKDIR /usr/src/app
 COPY ./src/package*.json ./
-# install dependencies
+
 RUN npm install
-# automatic security fixes
-#RUN npm audit fix
-# manual security fixes
-# Bundle app source
+
 COPY ./src .
 
 EXPOSE 3000
