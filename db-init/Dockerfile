@@ -4,7 +4,7 @@ ENV DOCKERIZE_VERSION v0.6.1
 
 RUN apk add --update --no-cache openssl bash curl \
 && rm -rf /var/cache/apk/* \
-&& wget -e use_proxy=yes -e http_proxy=191.191.29.66:3128 https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSION/dockerize-alpine-linux-amd64-$DOCKERIZE_VERSION.tar.gz \
+&& wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSION/dockerize-alpine-linux-amd64-$DOCKERIZE_VERSION.tar.gz \
 && tar -C /usr/local/bin -xzvf dockerize-alpine-linux-amd64-$DOCKERIZE_VERSION.tar.gz \
 && rm dockerize-alpine-linux-amd64-$DOCKERIZE_VERSION.tar.gz
 
