@@ -1,11 +1,6 @@
 FROM node:latest
 
-ENV DOCKERIZE_VERSION v0.6.1
-
-RUN apt-get update && apt-get install -y wget \
-&& wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSION/dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz \
-&& tar -C /usr/local/bin -xzvf dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz \
-&& rm dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz
+ADD dockerize-linux-amd64-v0.6.1.tar.gz /usr/local/bin
 
 WORKDIR /usr/src/app
 COPY ./src/package*.json ./
@@ -15,5 +10,4 @@ RUN npm install
 COPY ./src .
 
 EXPOSE 3000
-
 ENTRYPOINT exec dockerize -wait http://${COUCHDB_USER}:${COUCHDB_PASSWORD}@${COUCHDB_HOST}:${COUCHDB_PORT}/tests_empty  -timeout 120s npm start
